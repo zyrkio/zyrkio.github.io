@@ -1,81 +1,79 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: "DeckDex – MTG-Kartenscanner"
+description: "Ein innovatives IoT-System zur Erkennung, Organisation und Verwaltung von Magic: The Gathering-Karten"
+img: assets/img/deckdex-hardware-cover.jpg
 importance: 1
-category: work
-related_publications: true
+category: projects
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+**DeckDex** ist ein interaktives System zur physischen Erkennung und Verwaltung von MTG-Karten. Es kombiniert optische Erkennung, motorisierte Steuerung und eine benutzerfreundliche Oberfläche für Sammler und Enthusiasten.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+---
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### 💡 Projektübersicht:
+
+DeckDex nutzt ein Kamera-gestütztes Scansystem zur Kartenerkennung, gesteuert durch einen Raspberry Pi 5. Karten werden automatisch per Schrittmotor in eine definierte Position gefahren. Die Klassifikation und Verwaltung erfolgt über eine eigens programmierte App.
+
+---
+
+### 🛠️ Systemkomponenten:
+
+| Komponente | Beschreibung |
+|-----------|--------------|
+| **Raspberry Pi 5** | Hauptsteuerungseinheit mit USB-Kamera und Datenverarbeitung |
+| **Arduino** | Echtzeitsteuerung der Schrittmotoren via STEP/DIR |
+| **TMC2209** | Leiser, präziser Schrittmotortreiber mit UART-Kommunikation |
+| **NEMA17** | 2-Phasen-Schrittmotor zum Bewegen der Kartenplattform |
+| **CAD-Designs** | Eigene 3D-gedruckte Komponenten für die Kartenführung |
+| **OpenCV** | Bilderkennung zur Kartenerkennung (OCR / Template Matching) |
+| **Datenbank** | Speicherung aller Karten & Metadaten lokal oder online |
+
+---
+
+### 🔍 Funktionale Features:
+
+- **Automatische Kartenpositionierung** über Stepper + TMC2209 für präzise Bewegung der Kartenplattform.
+- **Live-Bilderkennung** zur Erkennung von Kartennamen, Edition und Zustand mittels Kamera und OpenCV.
+- **Datenbankintegration** zur strukturierten Speicherung und Verwaltung deiner Sammlung (lokal oder online).
+- **Web-App & GUI** für:
+  - Intuitive Steuerung und Visualisierung des Systems.
+  - Preis-Tracking über externe APIs (Scryfall, TCGPlayer, Cardmarket).
+  - Verwaltung von Duplikaten, Deckanalyse und Berechnung des Gesamtwerts.
+
+---
+### 🖼️ Systembilder:
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3">
+    {% include figure.liquid path="assets/img/deckdex_Cad.jpeg" title="Hardware-Setup" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3">
+    {% include figure.liquid path="assets/img/deckdex1.jpeg" title="CAD-Design der Plattform" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3">
+    {% include figure.liquid path="assets/img/deckdex2.jpeg" title="Scan einer Karte" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
+<div class="caption">
+  Links: Das gesamte System im Betrieb.  
+  Mitte: CAD-Ansicht der Kartenführung.  
+  Rechts: Scan einer MTG-Karte mit Live-Erkennung.
+</div>
 
-{% endraw %}
+---
+
+---
+
+### 🎨 UI mit Flutter & Dart
+
+Die Benutzeroberfläche von **DeckDex** wird mit **Flutter** in der Programmiersprache **Dart** entwickelt. Diese Wahl ermöglicht eine moderne, responsive und plattformübergreifende Benutzererfahrung – ideal sowohl für Desktop als auch für mobile Geräte.
+
+**Warum Flutter?**
+- **Plattformunabhängigkeit**: Eine Codebasis für Web, Android, iOS und Desktop.
+- **Hohe Performance**: Native Kompilierung sorgt für flüssige Animationen und schnelle Ladezeiten.
+- **Flexible UI-Komponenten**: Ideal zur Darstellung dynamischer Kartendaten, Charts, Filter und Preisentwicklungen.
+- **Einfaches State Management**: Sauberer Code für komplexe Interaktionen wie Live-Suche, Preisabfragen und Filterlogik.
+- **Entwicklung unter Ubuntu**: Flutter funktioniert hervorragend unter Ubuntu, was schnelles Prototyping und reibungslose Entwicklung auf deinem System ermöglicht.
+
