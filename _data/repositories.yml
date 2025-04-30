@@ -1,14 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - zyrkio  # Dein GitHub-Benutzername
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - zyrkio/zyrkio.github.io  # Dein GitHub-Repository0
+  - zyrkio/deckdex_app  # Dein GitHub-Repository für die DeckDex-App
+  - zyrkio/Finance_App

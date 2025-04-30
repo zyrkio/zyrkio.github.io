@@ -1,79 +1,86 @@
 ---
 layout: page
-title: "DeckDex – MTG-Kartenscanner"
-description: "Ein innovatives IoT-System zur Erkennung, Organisation und Verwaltung von Magic: The Gathering-Karten"
-img: assets/img/deckdex-hardware-cover.jpg
+title: "DeckDex – MTG Card Scanner"
+description: "An innovative IoT system for identifying, organizing, and managing Magic: The Gathering cards"
+img: assets/img/deckdex_Cad.jpeg
 importance: 1
-category: projects
+category: fun
 related_publications: false
 ---
 
-**DeckDex** ist ein interaktives System zur physischen Erkennung und Verwaltung von MTG-Karten. Es kombiniert optische Erkennung, motorisierte Steuerung und eine benutzerfreundliche Oberfläche für Sammler und Enthusiasten.
+**DeckDex** is an interactive system for the physical recognition and management of Magic: The Gathering (MTG) cards. It combines optical recognition, motorized movement, and a user-friendly interface for collectors and enthusiasts.
+
+- GitHub Repository: [zyrkio/deckdex_app](https://github.com/zyrkio/deckdex_app)
 
 ---
 
-### 💡 Projektübersicht:
+### 💡 Project Overview
 
-DeckDex nutzt ein Kamera-gestütztes Scansystem zur Kartenerkennung, gesteuert durch einen Raspberry Pi 5. Karten werden automatisch per Schrittmotor in eine definierte Position gefahren. Die Klassifikation und Verwaltung erfolgt über eine eigens programmierte App.
-
----
-
-### 🛠️ Systemkomponenten:
-
-| Komponente | Beschreibung |
-|-----------|--------------|
-| **Raspberry Pi 5** | Hauptsteuerungseinheit mit USB-Kamera und Datenverarbeitung |
-| **Arduino** | Echtzeitsteuerung der Schrittmotoren via STEP/DIR |
-| **TMC2209** | Leiser, präziser Schrittmotortreiber mit UART-Kommunikation |
-| **NEMA17** | 2-Phasen-Schrittmotor zum Bewegen der Kartenplattform |
-| **CAD-Designs** | Eigene 3D-gedruckte Komponenten für die Kartenführung |
-| **OpenCV** | Bilderkennung zur Kartenerkennung (OCR / Template Matching) |
-| **Datenbank** | Speicherung aller Karten & Metadaten lokal oder online |
+DeckDex uses a camera-based scanning system for card detection, controlled by a Raspberry Pi 5. Cards are automatically moved into a defined position via stepper motor mechanics. Classification and management are handled through a custom-built app.
 
 ---
 
-### 🔍 Funktionale Features:
+### 🛠️ System Components
 
-- **Automatische Kartenpositionierung** über Stepper + TMC2209 für präzise Bewegung der Kartenplattform.
-- **Live-Bilderkennung** zur Erkennung von Kartennamen, Edition und Zustand mittels Kamera und OpenCV.
-- **Datenbankintegration** zur strukturierten Speicherung und Verwaltung deiner Sammlung (lokal oder online).
-- **Web-App & GUI** für:
-  - Intuitive Steuerung und Visualisierung des Systems.
-  - Preis-Tracking über externe APIs (Scryfall, TCGPlayer, Cardmarket).
-  - Verwaltung von Duplikaten, Deckanalyse und Berechnung des Gesamtwerts.
+| Component         | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| **Raspberry Pi 5** | Main control unit with USB camera and local data processing                |
+| **Arduino**        | Real-time motor control using STEP/DIR signals                             |
+| **TMC2209**        | Silent and precise stepper driver with UART configuration                  |
+| **NEMA17**         | Bipolar stepper motor for card platform movement                           |
+| **CAD Designs**    | Custom 3D-printed parts for guiding and holding cards                      |
+| **OpenCV**         | Optical recognition for card details (OCR / template matching)             |
+| **Database**       | Stores card metadata and collection data locally or optionally online      |
 
 ---
-### 🖼️ Systembilder:
+
+### 🔍 Key Features
+
+- **Automatic Card Positioning**  
+  With stepper motors and TMC2209 drivers for precise and reliable movement.
+
+- **Live Card Recognition**  
+  Detects card name, edition, and condition using real-time camera input and OpenCV.
+
+- **Database Integration**  
+  Structure and manage your card collection offline or optionally sync with cloud storage.
+
+- **Web App & GUI**  
+  - Intuitive control of the scanning process and visualization  
+  - Price tracking via external APIs (Scryfall, TCGPlayer, Cardmarket)  
+  - Tools for duplicate handling, deck analysis, and collection value computation
+
+---
+
+### 🖼️ System Images
 
 <div class="row">
   <div class="col-sm mt-3">
-    {% include figure.liquid path="assets/img/deckdex_Cad.jpeg" title="Hardware-Setup" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/deckdex_Cad.jpeg" title="Hardware Setup" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3">
-    {% include figure.liquid path="assets/img/deckdex1.jpeg" title="CAD-Design der Plattform" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/deckdex1.jpeg" title="CAD Design of Platform" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3">
-    {% include figure.liquid path="assets/img/deckdex2.jpeg" title="Scan einer Karte" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/deckdex2.jpeg" title="Scanning a Card" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  Links: Das gesamte System im Betrieb.  
-  Mitte: CAD-Ansicht der Kartenführung.  
-  Rechts: Scan einer MTG-Karte mit Live-Erkennung.
+  Left: Full hardware system in operation.  
+  Center: CAD view of the card-guiding platform.  
+  Right: Live scan of an MTG card.
 </div>
 
 ---
 
----
+### 🎨 UI Built with Flutter & Dart
 
-### 🎨 UI mit Flutter & Dart
+The user interface for **DeckDex** is developed using **Flutter** and **Dart**, enabling a modern, responsive, and cross-platform experience suitable for both desktop and mobile devices.
 
-Die Benutzeroberfläche von **DeckDex** wird mit **Flutter** in der Programmiersprache **Dart** entwickelt. Diese Wahl ermöglicht eine moderne, responsive und plattformübergreifende Benutzererfahrung – ideal sowohl für Desktop als auch für mobile Geräte.
-
-**Warum Flutter?**
-- **Plattformunabhängigkeit**: Eine Codebasis für Web, Android, iOS und Desktop.
-- **Hohe Performance**: Native Kompilierung sorgt für flüssige Animationen und schnelle Ladezeiten.
-- **Flexible UI-Komponenten**: Ideal zur Darstellung dynamischer Kartendaten, Charts, Filter und Preisentwicklungen.
-- **Einfaches State Management**: Sauberer Code für komplexe Interaktionen wie Live-Suche, Preisabfragen und Filterlogik.
-- **Entwicklung unter Ubuntu**: Flutter funktioniert hervorragend unter Ubuntu, was schnelles Prototyping und reibungslose Entwicklung auf deinem System ermöglicht.
+**Why Flutter?**
+- **Cross-platform**: One codebase for Web, Android, iOS, and Desktop
+- **High Performance**: Native compilation ensures smooth animations and fast rendering
+- **Flexible UI Widgets**: Perfect for showing dynamic card data, charts, filters, and prices
+- **Clean State Management**: Structured and maintainable code for real-time updates and interactions
+- **Optimized for Ubuntu**: Flutter runs seamlessly under Ubuntu for fast prototyping and deployment
 

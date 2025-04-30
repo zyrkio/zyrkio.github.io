@@ -1,200 +1,191 @@
 {
-  "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
-    "image": "",
-    "email": "albert@einstein.de",
+  "basic": {
+    "name": "Talant Ziadinov",
+    "label": "System Engineering Student – Medical Technology",
+    "image": "assets/img/talant.jpg",
+    "email": "ziadinov.t@gmail.com",
     "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "url": "https://zyrkio.github.io/",
+    "summary": "System Engineering student specializing in Medical Technology at ZHAW, passionate about technology, IoT, and creating impactful solutions.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Zürich, Switzerland",
+      "city": "Zürich",
+      "countryCode": "CH",
+      "region": "Switzerland"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "Talant Ziadinov",
+        "url": "https://www.linkedin.com/in/talant-ziadinov"
+      },
+      {
+        "network": "GitHub",
+        "username": "zyrkio",
+        "url": "https://github.com/zyrkio"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "CYBATHLON ETH Zürich",
+      "position": "Technical Assistant for Technical Projects",
+      "url": "https://www.cybathlon.com/",
+      "startDate": "2023-06-01",
+      "endDate": "2024-12-01",
+      "summary": "Worked on MINT modules for CYBATHLON@school, including EMG-controlled microcontroller modules and bionically-oriented prosthesis development.",
+      "highlights": [
+        "Contributed to CYBATHLON 2024 through technical support and 3D parts construction for the event.",
+        "Built an interactive Arduino-based 3D robotic arm demo."
+      ]
+    },
+    {
+      "name": "Karunya Institute of Technology and Sciences",
+      "position": "Research Intern",
+      "url": "https://www.karunya.edu/",
+      "startDate": "2024-07-01",
+      "endDate": "2024-09-01",
+      "summary": "Programmed and trained deep learning models to classify EEG signals for imagined speech recognition.",
+      "highlights": [
+        "Developed a research paper analyzing EEG-based imagined speech recognition.",
+        "Part of an IAESTE internship in India."
+      ]
+    },
+    {
+      "name": "Sensirion AG",
+      "position": "Werkstudent (Student Assistant) - Data Science",
+      "url": "https://www.sensirion.com/",
+      "startDate": "2022-11-01",
+      "endDate": "2023-08-01",
+      "summary": "Involved in data science tasks, focusing on enhancing sensor data interpretation and real-time sensor data visualizations.",
+      "highlights": [
+        "Developed real-time data visualization tools for sensor data analysis.",
+        "Improved the performance of sensor data models and prediction algorithms."
+      ]
+    },
+    {
+      "name": "PPI Schweiz GmbH",
+      "position": "Business Analyst Trainee",
+      "url": "https://www.ppi.com/",
+      "startDate": "2020-09-01",
+      "endDate": "2021-08-30",
+      "summary": "Contributed to business analysis for IT-related projects, providing strategic insights and recommendations.",
+      "highlights": [
+        "Analyzed and documented business requirements.",
+        "Assisted in client presentations and report generation."
+      ]
     }
   ],
-  "volunteer": [
+  "further_experience": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
+      "name": "IAESTE Switzerland (Local Committee Zurich)",
+      "position": "Local Committee Member",
+      "url": "https://www.iaeste.ch/",
+      "startDate": "2024-11-01",
+      "endDate": "Present",
+      "summary": "Assisted in the management of IAESTE's local operations, supporting student exchanges and managing administrative tasks."
+    },
+    {
+      "name": "Swiss Army",
+      "position": "Military Service",
+      "startDate": "2022-01-01",
+      "endDate": "2022-05-01",
+      "summary": "Completed mandatory military service as part of the Swiss Armed Forces, participating in various training programs and assignments."
+    },
+    {
+      "name": "Kyrgyzstan Project",
+      "position": "Project Member",
       "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "startDate": "2021-06-01",
+      "endDate": "Present",
+      "summary": "In January 2019, my family and I founded an association in our hometown, Bel, in Kyrgyzstan. Our goal is to offer a variety of courses to the local residents, including language courses, cooking, IT, and sewing. The association is steadily growing and attracting international volunteers. My responsibilities include IT support and recruiting volunteers."
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "institution": "ZHAW School of Engineering",
+      "location": "Zürich, Switzerland",
+      "url": "https://www.zhaw.ch/en/",
+      "area": "System Engineering – Medical Technology",
+      "studyType": "Bachelor of Science",
+      "startDate": "2022-09-01",
+      "endDate": "Present",
+      "score": "Current"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "institution": "ZHAW School of Engineering",
+      "location": "Zürich, Switzerland",
+      "area": "Entrepreneurial Profile",
+      "studyType": "Certificate",
+      "startDate": "2024-09-01",
+      "endDate": "Present",
+      "summary": "Participating in a course designed to boost entrepreneurial thinking and innovation.",
+      "highlights": [
+        "Exploring the foundations of entrepreneurship.",
+        "Learning business modeling and pitching skills."
+      ]
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Programming",
+      "level": "Intermediate",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Java",
+        "Python",
+        "C++",
+        "C",
+        "Dart",
+        "Flutter",
+        "Grafana"
       ]
     }
   ],
   "languages": [
     {
       "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "Kyrgyz",
+      "fluency": "Native Speaker"
     },
     {
       "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "fluency": "Fluent (C1)"
+    },
+    {
+      "language": "French",
+      "fluency": "Intermediate (B2)"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Woodworking",
+        "Painting",
+        "Guitar",
+        "Fitness"
+      
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "",
+      "keywords": [
+        
+        "Hiking",
+        "IoT Development",
+        "Gardening"
+      ]
+
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "DeckDex",
+      "summary": "A smart card organizer app that helps keep track of trading cards, such as Magic: The Gathering cards.",
+      "url": "https://github.com/zyrkio/deckdex_app"
     }
   ]
 }
