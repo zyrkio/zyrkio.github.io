@@ -3,36 +3,36 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "about",
+    id: "nav-home",
+    title: "Home",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-blog",
-          title: "blog",
+          title: "Blog",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
           },
         },{id: "nav-projects",
-          title: "projects",
+          title: "Projects",
           description: "A collection of fun and innovative projects I&#39;ve worked on.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-repositories",
-          title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          title: "Repositories",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -78,11 +78,16 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-deckdex-mtg-kartenscanner",
-          title: 'DeckDex – MTG-Kartenscanner',
-          description: "Ein innovatives IoT-System zur Erkennung, Organisation und Verwaltung von Magic: The Gathering-Karten",
+          section: "News",},{id: "projects-deckdex-mtg-card-scanner",
+          title: 'DeckDex – MTG Card Scanner',
+          description: "An innovative IoT system for identifying, organizing, and managing Magic: The Gathering cards",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-finance-app-stock-portfolio-tracker",
+          title: 'Finance App – Stock Portfolio Tracker',
+          description: "A modern Python-based desktop application for managing and tracking stock investments with real-time data and user profiles",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
             },},{
         id: 'social-email',
         title: 'email',
